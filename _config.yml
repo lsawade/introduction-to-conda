@@ -9,9 +9,7 @@ include:
   - docs/environments.md
   - docs/installing-packages.md
   - docs/cheatsheet.md
-remote_theme: sighingnow/jekyll-gitbook
-
-syntax_highlighter_style: colorful
+remote_theme: aksakalli/jekyll-doc-theme@gh-pages 
 toc:
   enabled: true
 #   h_min: 1
