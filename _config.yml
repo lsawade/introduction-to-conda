@@ -1,0 +1,11 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - docs/what-is-conda.md
+  - docs/environments.md
+  - docs/installing-packages.md
+  - docs/cheatsheet.md
