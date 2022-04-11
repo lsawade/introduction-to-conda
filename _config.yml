@@ -9,7 +9,9 @@ include:
   - docs/environments.md
   - docs/installing-packages.md
   - docs/cheatsheet.md
-remote_theme: Wiredcraft/carte
+remote_theme: sighingnow/jekyll-gitbook
+
+syntax_highlighter_style: colorful
 toc:
   enabled: true
 #   h_min: 1
