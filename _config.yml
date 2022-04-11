@@ -10,3 +10,5 @@ include:
   - docs/installing-packages.md
   - docs/cheatsheet.md
 theme: minima
+toc:
+  enabled: true
