@@ -2,17 +2,18 @@ title: Introduction to Conda
 author: Lucas Sawade
 plugins:
   - jekyll-relative-links
+  - jekyll-remote-theme
 relative_links:
   enabled: true
   collections: true
 destination: build
 include:
-  - ../README.md
+  - README.md
   - what-is-conda.md
   - environments.md
   - installing-packages.md
   - cheatsheet.md
-remote_theme: aksakalli/jekyll-doc-theme@gh-pages 
+remote_theme: pages-themes/minimal@v0.2.0
 social-network-links:
   email: "lsawade@princeton.edu"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
