@@ -7,8 +7,17 @@ nav_order: 1
 
 # Creating a Python Package Pypi-style
 
-As a part of the workshop we will learn how to create an anconda package. For that, 
+As a part of the workshop we will learn how to create an anaconda package. For that, 
 we need to understand the parebone needs for a pyhton package.
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Structure of a very barebon Python package
 

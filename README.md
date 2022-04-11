@@ -1,9 +1,3 @@
----
-layout: default
-title: Workshop Overview
-nav_order: 2
----
-
 # Introduction to `conda`
 
 This is the repository associated to the PICScIE Spring Workshop 2022 
@@ -12,6 +6,9 @@ This is the repository associated to the PICScIE Spring Workshop 2022
 The repo is divided into two sections `docs/`, which are the notes on various 
 conda related topics, and `python-package`, which is a mini bare-bone python
 package that is used as an example for creating your own conda package.
+
+The documentation for the course is located here: 
+[Documentation](https://lsawade.github.io/introduction-to-conda/)
 
 ## Workshop's goals are
 
@@ -36,14 +33,6 @@ some knowledge to you on how to publish your software using conda
 * Make you a Python wizard
 * Teach you how to make a Python Package, even though we are doing it
 * Completely `conda`-ify all of your software - that would be post workshop work
-
-## Outline
-
-1. [What is `conda`](docs/what-is-conda.md)
-2. [Working with environments](docs/environments.md)
-3. [Installing packages](docs/installing-packages.md)
-4. [Creating packages](docs/creating-a-conda-package.md)
-5. [Advanced Things](docs/)
 
 ## Requirements
 
