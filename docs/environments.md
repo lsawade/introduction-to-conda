@@ -16,13 +16,12 @@ nav_order: 4
 </details>
 
 
-
 ## Create an environment
 
 ```
 ```
 
-## Create an `environemnt.yml`
+## Create an `environment.yml`
 
 ## Export an environment
 
