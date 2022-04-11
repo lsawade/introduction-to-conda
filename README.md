@@ -57,6 +57,9 @@ or less storage
 ***`conda-build` Documentation for creating `conda` packages***:
 * https://docs.conda.io/projects/conda-build/en/latest/index.html
 
+***`conda` Cheatsheet***
+* [Link](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
 ***Shameless plug***:
 * How to make a python package: [Link](https://lsawade.github.io/how_to_make_a_python_package/index.html)
 
