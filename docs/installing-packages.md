@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Creating a conda package
+title: Installing Packages
 nav_order: 5
 ---
 
-# Installung Packages
+# Installing Packages
 
 <details open markdown="block">
   <summary>

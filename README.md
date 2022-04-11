@@ -10,7 +10,7 @@ package that is used as an example for creating your own conda package.
 The documentation for the course is located here: 
 [Documentation](https://lsawade.github.io/introduction-to-conda/)
 
-## Workshop's goals are
+## Workshop's goals
 
 Providing you with the tools to make your software reproducible and impart 
 some knowledge to you on how to publish your software using conda
@@ -28,7 +28,7 @@ some knowledge to you on how to publish your software using conda
     * How to create your own package
     * How to publish your own package
 
-## What are ***not*** the goals of this workshop?
+## ***Not*** workshop goals
 
 * Make you a Python wizard
 * Teach you how to make a Python Package, even though we are doing it

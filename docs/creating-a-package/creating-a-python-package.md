@@ -21,7 +21,7 @@ we need to understand the parebone needs for a pyhton package.
 
 ## Structure of a very barebon Python package
 
-```directory
+```
 1    python-package
 2    |____environment.yml
 3    |____README.md
