@@ -9,7 +9,7 @@ include:
   - docs/environments.md
   - docs/installing-packages.md
   - docs/cheatsheet.md
-remote_theme: chrisrhymes/bulma-clean-theme
+remote_theme: Wiredcraft/carte
 toc:
   enabled: true
 #   h_min: 1
