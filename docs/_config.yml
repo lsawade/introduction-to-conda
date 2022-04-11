@@ -6,14 +6,18 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-destination: build
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 2
 include:
   - README.md
   - what-is-conda.md
   - environments.md
   - installing-packages.md
   - cheatsheet.md
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: just-the-docs/just-the-docs
+color_scheme: "dark"
 social-network-links:
   email: "lsawade@princeton.edu"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
