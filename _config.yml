@@ -9,3 +9,4 @@ include:
   - docs/environments.md
   - docs/installing-packages.md
   - docs/cheatsheet.md
+theme: jekyll-theme-minimal
