@@ -29,7 +29,7 @@ some knowledge to you on how to publish your software using conda
 
 * Make you a Python wizard
 * Teach you how to make a Python Package, even though we are doing it
-* Completely merge all of your software - that would be post workshop work
+* Completely `conda`-ify all of your software - that would be post workshop work
 
 ## Outline
 
@@ -37,6 +37,7 @@ some knowledge to you on how to publish your software using conda
 2. [Working with environments](docs/environments.md)
 3. [Installing packages](docs/installing-packages.md)
 4. [Creating packages](docs/creating-a-conda-package.md)
+5. [Advanced Things](docs/)
 
 ## Requirements
 
