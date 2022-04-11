@@ -54,6 +54,10 @@ with the (Linux) command line, and have a working Anaconda installation.
 or less storage
 * Install miniconda: [Link](https://docs.conda.io/en/latest/miniconda.html)
 
+***`conda-build` Documentation for creating `conda` packages***:
+* https://docs.conda.io/projects/conda-build/en/latest/index.html
 
 ***Shameless plug***:
 * How to make a python package: [Link](https://lsawade.github.io/how_to_make_a_python_package/index.html)
+
+
