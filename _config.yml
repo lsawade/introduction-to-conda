@@ -2,6 +2,7 @@ title: Introduction to Conda
 author: Lucas Sawade
 description: Workshope page for Introduction to Conda 2022
 baseurl: "/introduction-to-conda"
+permalink: pretty
 source: docs
 exclude:
   python-package
@@ -14,13 +15,7 @@ relative_links:
 toc:
   enabled: true
   h_min: 1
-  h_max: 2
-include:
-  - README.md
-  - what-is-conda.md
-  - environments.md
-  - installing-packages.md
-  - cheatsheet.md
+  h_max: 4
 remote_theme: just-the-docs/just-the-docs
 color_scheme: "dark"
 social-network-links:
@@ -29,9 +24,6 @@ social-network-links:
   github: lsawade
 
 url-pretty: "lsawade.github.io"
-
-search_enabled: true
- Enable or disable the site search
 
 heading_anchors: true
 
