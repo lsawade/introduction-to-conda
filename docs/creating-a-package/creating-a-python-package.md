@@ -2,7 +2,7 @@
 layout: default
 title: Creating a Python Package
 parent: Creating a Package 
-nav_order: 6
+nav_order: 1
 ---
 
 # Creating a Python Package Pypi-style
