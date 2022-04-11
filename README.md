@@ -31,6 +31,12 @@ some knowledge to you on how to publish your software using conda
 * Teach you how to make a Python Package, even though we are doing it
 * Completely merge all of your software - that would be post workshop work
 
+## Outline
+
+1. [What is `conda`](docs/what-is-conda.md)
+2. [Working with environments](docs/environments.md)
+3. [Installing packages](docs/installing-packages.md)
+4. [Creating packages](docs/creating-a-conda-package.md)
 
 ## Requirements
 

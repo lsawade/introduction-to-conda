@@ -50,3 +50,5 @@ protects you against possible changes in future versions of, e.g. `numpy` or
 `scipy`. For example, at some point `numpy` updated how you access the `fft`
 modules, breaking many signal processing applications. With an version tracked
 `environment.yml` this would not happen.
+
+
