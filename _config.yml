@@ -10,8 +10,3 @@ include:
   - docs/installing-packages.md
   - docs/cheatsheet.md
 remote_theme: aksakalli/jekyll-doc-theme@gh-pages 
-toc:
-  enabled: true
-#   h_min: 1
-#   h_max: 2
-theme: jekyll-theme-hacker
