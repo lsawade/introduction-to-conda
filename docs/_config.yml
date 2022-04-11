@@ -3,6 +3,7 @@ author: Lucas Sawade
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme
+  - jekyll-readme-index
 relative_links:
   enabled: true
   collections: true
@@ -27,6 +28,11 @@ url-pretty: "lsawade.github.io"
 
 post_search: true
 
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
+  
 # Colors
 # navbar-col: "#EAEAEA"
 # navbar-text-col: "#404040"
