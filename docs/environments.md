@@ -1,3 +1,10 @@
+---
+layout: default
+title: Environments
+nav_order: 9
+---
+
+
 # Environments
 
 ## Create an environment

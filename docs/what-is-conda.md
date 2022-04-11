@@ -1,3 +1,9 @@
+---
+layout: default
+title: What is conda?
+nav_order: 3
+---
+
 # What is `conda`?
 
 At the very core `conda` is a programming-language-agnostic package manager. In

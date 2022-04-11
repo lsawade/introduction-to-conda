@@ -1,4 +1,11 @@
-# Creating a Python Pacakge Pypi-style
+---
+layout: default
+title: Creating a Python Package
+parent: Creating a Package 
+nav_order: 6
+---
+
+# Creating a Python Package Pypi-style
 
 As a part of the workshop we will learn how to create an anconda package. For that, 
 we need to understand the parebone needs for a pyhton package.

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Cheatsheet
+nav_order: 7
+---
+
 # Some advanced things
 
 ## Environment Variables

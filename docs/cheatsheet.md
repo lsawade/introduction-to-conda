@@ -1,3 +1,9 @@
+---
+layout: default
+title: Cheatsheet
+nav_order: 10
+---
+
 # Cheat sheet
 
 There is an official cheatsheet (see

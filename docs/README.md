@@ -1,3 +1,9 @@
+---
+layout: default
+title: Workshop Overview
+nav_order: 2
+---
+
 # Introduction to `conda`
 
 This is the repository associated to the PICScIE Spring Workshop 2022 
