@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cheatsheet
+title: Mamba
 nav_order: 8
 ---
 # `mamba`?

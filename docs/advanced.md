@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cheatsheet
+title: Advanced
 nav_order: 7
 ---
 
