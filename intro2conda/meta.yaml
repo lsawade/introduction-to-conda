@@ -6,12 +6,11 @@ package:
   version: "{{ version }}"
 
 source:
-  url: intro2conda
-  sha256: db8ceab15f4734bf51662c66482f6fe73aa4ea2d2bd6aa9a80a0e8db4bbc6c53
-  folder: conda/build
+  url: https://github.com/lsawade/introduction-to-conda/tree/main/python-package
+
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: "{{ PYTHON }} -m pip install . --ignore-installed -vv "
 
 requirements:
   host:
