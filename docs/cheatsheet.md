@@ -91,5 +91,3 @@ Check the version of Python using `python --version`
 ***NOTE***: You have to use quotation marks if you are using any of [`> < | *`]
 in the specification or if the specification contains a space.
 
-
-## Next: [Cheatsheet](cheatsheet.md)
