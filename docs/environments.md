@@ -203,6 +203,5 @@ much or as little version information as you want.
 conda create env -f test-env.yml
 ```
 
-
-
-
+Now that we know all about creating and recreating environments, we can start
+by installing packages.

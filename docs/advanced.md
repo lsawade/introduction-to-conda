@@ -8,20 +8,45 @@ nav_order: 7
 
 ## Environment Variables
 
-You can define environment variables in conda configuration file, so that
+You can define environment variables in `enviroment.yml` file, so that
 whenever your environment is loaded you have environment variables are set. This
 works well for configuration parameters but lacks in versatility for path
 descriptions.
 
-An example for setting a configuration parameter. ***Disclaimer*** don't use
-this if your software has a lot of parameters to define, and these parameters
-control all of the software. A file that is more easily written and changed that
-is read as a config file upon running the software is probably a better choice
-(eg. [TOML](https://toml.io/en/)).
+***Disclaimer***: Don't use this if your software has a lot of parameters to
+define, and these parameters control all of the software (say simluations). A
+file that is more easily written and changed that is read as a config file upon
+running the software is probably a better choice (eg.
+[TOML](https://toml.io/en/), or [YAML](https://yaml.org)).
 
+***An example for setting a configuration parameter***:
+
+If we used an `environment.yml` with the following content:
+
+```bash
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.8
+  - pip:
+    - -e .
+variables:
+  PSTYLE: PRETTY
+```
+and created the enviroment, the variable `PSTYLE` is set upon activation. We
+can check using:
 ```bash
 echo $PSTYLE
 ```
+or
+```bash
+conda env config vars list
+```
+
+Then, for example, in `python` we can print depending on the environment
+variable set in the `environment.yml`.
+
 
 ```python
 from intro2conda.print import customprint
@@ -32,23 +57,35 @@ pdict = dict(
 customprint(pdict)
 ```
 
-Update `PSTYLE` and run again
+Exit python, update `PSTYLE` to a different value than `PRETTY`,
+and run again to see the change.
 
-```python
-from intro2conda.print import customprint
+## Setting enviroment variables after creating the environment
 
-# Make dictionary
-pdict = dict(
-    hello=dict(princeton=1, USA=2, world=3), 
-    bye=dict(princeton=1, USA=2, world=3))
+We can set environment specific variables after we already created the
+environment using the following syntax
+```bash
+conda env config vars set my_var=value
+```
+For the environment, this change is permanent, meaning that after deactivation,
+and reactivation the variable will be available again!
 
-# Print dictionary 2 different ways depending on an environment variable
-customprint(pdict)
+It will also be included now, when exporting the environment:
+```bash
+conda env export --from-history 
 ```
 
-### Why can't/shouldn't we use this with paths?
 
-The `environment.yml` is not very dynamic in the sense that it is not aware of/cannot parse standard path descriptions such as `$HOME`, `$USER` etc. So, if you define a path it needs to be the exact path making it not very portable/reproducible. Unless you know that you are always going to be on a single machine in a single location. Then, setting the as an environment variable may be ok!
+
+
+## Why can't/shouldn't we use this with paths?
+
+The `environment.yml` is not very dynamic in the sense that it is not aware
+of/cannot parse standard path descriptions such as `$HOME`, `$USER` etc. So, if
+you define a path it needs to be the exact path making it not very
+portable/reproducible. Unless you know that you are always going to be on a
+single machine in a single location. Then, setting the as an environment
+variable may be ok!
 
 
 
