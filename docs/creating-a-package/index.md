@@ -8,7 +8,7 @@ has_toc: false
 
 # Creating a Package
 
-To create a conda package, the first step is to have something
+To create a conda package, the first step is to have a
 publishable/buildable package. For the purpose of this course, we will create
 a buildable python package that we will then upload to the `anaconda` package
 system.

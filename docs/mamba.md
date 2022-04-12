@@ -35,12 +35,12 @@ environments become very large.
 One of the coolest feature is
 [`repoquery`](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html#repoquery)
 
-Repoquery can easily and efficiently show you dependency structure of the
+`repoquery` can easily and efficiently show you dependency structure of the
 package you want to install.
 
 ## Why not `mambda`?
 
-AlthoughMamba has been growing quite rapidly, it’s just not yet as widely
+Although `mamba` has been growing quite rapidly, it’s just not yet as widely
 spread. Hence, bugs and oter kinks haven't been fully ironed out yet. This may
 change though. As of now, the main disadvantage is that mamba’s incompatibility
 detection is not as “good” as conda’s (yet). So, if you want your research to be

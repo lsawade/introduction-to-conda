@@ -32,11 +32,15 @@ source ~/<path_to_anaconda>/etc/profile.d/conda.sh
 ```
 This may ask you whether you want to append the `conda init` to your `.bashrc`,
 which in most cases you want to answer with `Y(es)`. Try again to get the `conda
-info`.  If everything's alright, you should be able update the base environment.
+info`.  If everything's alright, you should be able to update the base
+environment.
 ```bash
 conda update conda
 ```
 Once the base environment is updated, we can proceed with creating environments.
+
+***TODAY DISCLAIMER***: Don't do this you just installed it and it hopefully
+works just fine.
 
 ***PRINCETON HPC DISCLAIMER***: On the clusters you are not able to update the
 base environment because you do not have the rights to modify the base
@@ -67,7 +71,7 @@ the creation command
 conda create -y --name test-env "python>=3.9" matplotlib numpy
 ```
 The final statement will show you the instructions on how to activate/deativate
-the environment.
+the environment. For example:
 ```bash
 ...
 # To activate this environment, use
@@ -84,12 +88,16 @@ conda activate test-env
 ```
 
 To check whether the activation was successful, see whether the python version
-you have in the environment is actually installed in your environment:
+you want to have in the environment is actually installed in your environment:
 ```bash
+# Check where installed
 which python
+# Check version
+python --version
 ```
 If it does not return something like:
-`path/to/anaconda/envs/test-env/bin/python`, then you are in trouble.
+`path/to/anaconda/envs/test-env/bin/python`, or the version is not `>=3.9` then
+you are in trouble.
 
 
 ## Remove an environment
@@ -122,9 +130,9 @@ and
 ```bash
 conda create --name test-env-2 --file test-env-explicit.yml
 ```
-***Note***: This only works if you are on (at least) the same platform. Most of
-the associated links in `test-env.yml` will point to platform specific
-`channels`, so if you create the file on `macOS` it will not work on `Darwin`
+***Note***: This only works if you are (at least) on the same platform. Most of
+the associated links in `test-env-explicit.yml` will point to platform specific
+`channels`, so if you create the file on `macOS` it will not work on `Linux`.
 
 ## Create an `environment.yml`
 
@@ -134,13 +142,13 @@ why is there another section?
 As mentioned above the `explicit` form of an `environment.yml` is platform
 dependent. We can't however assume that everyone is working on the same
 platform. Most of us don't. Almost everyone here has either a Mac or a Windows
-machine, but the campus clusters all run Linux. A work around is a platform
+machine, but the campus clusters all run Linux. A work-around is a platform
 independent `environment.yml` that can be used to recreate the environment on
 any machine.
 
-***NOTE***: I have written `.yml` quite a lot now. Discussion the actual format
-is beyond the scope of this workshop, but I will leave you with a link to the
-[YAML Documentation](https://yaml.org).
+***NOTE***: I have written `.yml` quite a lot now. Discussion if the actual
+format is beyond the scope of this workshop, but I will leave you with a link to
+the [YAML Documentation](https://yaml.org).
 
 ### From scratch
 
@@ -167,14 +175,13 @@ sure that you do provide version numbers for reproducibility. A full guide on
 how to define version numbers is given at the end of the
 [Cheatsheet](cheatsheet.md).
 
-Let's use this file to create the enviroment
+Let's use this file to recreate the enviroment
 ```bash
 conda env create -f test-env.yml
 ```
 If the enviroment still exists remove it or give it a different name by using
 the `--name <env-name>` option. Since we are using a file we will not be
 prompted whether we want to create the environment.
-
 
 ## Export an environment & reproduce it
 
@@ -183,9 +190,9 @@ enviroment:
 ```bash
 conda env export
 ```
-This will return an `enviroment.yml` with the exact version and the "hash"-code.
+This will return an `environment.yml` with the exact version and the "hash"-code.
 This is often too much information and makes it incredible hard to transfer the
-environment to other machines. Therefore a better option is to just export the
+environment to other machines. Therefore, a better option is to just export the
 packages we installed by hand
 ```bash
 conda env export --from-history 
@@ -213,7 +220,7 @@ conda create env -f test-env.yml
 ```
 
 Now that we know all about creating and recreating environments, we can start
-by installing packages.
+installing packages.
 
 
 ## Next: [Installing Packages](installing-packages.md)

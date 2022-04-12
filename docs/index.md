@@ -27,7 +27,7 @@ The courses repo is located here
 
 
 The repo is divided into two sections `docs/`, which are the notes on various
-conda related topics, and `intro2conda`, which is a miniscule python
+`conda` related topics, and `intro2conda`, which is a miniscule python
 package that is used as an example for creating your own `conda` package.
 
 ## Workshop goals
@@ -52,7 +52,7 @@ some knowledge to you on how to publish your software using `conda`
 
 * Make you a Python wizard
 * Teach you how to make a Python Package, even though we are doing it
-* Completely `conda`-ify all of your software - that would be post workshop work
+* Completely `conda`-ify all of your software - that would be post-workshop work
 
 ## Requirements
 
@@ -61,13 +61,17 @@ with the (Linux) command line, and have a working Anaconda installation.
 
 ## Getting Started
 
-You technically don't need anything to get started, but I created a reopo with
+You technically don't need anything to get started, but I created a repo with
 all the docs and a tiny Python package that we will use to create and upload our
-first `conda` package. So let's just clone it for now and the we will get
+first `conda` package. So let's just clone it for now and then we will get
 started.
 
 ```bash
 git clone git@github.com:lsawade/introduction-to-conda.git
+```
+Then,
+```bash
+cd introduction-to-conda
 ```
 
 ## Course Outline
@@ -106,4 +110,3 @@ or less storage
 
 ***Shameless plug***:
 * How to make a python package: [Link](https://lsawade.github.io/how_to_make_a_python_package/index.html)
-

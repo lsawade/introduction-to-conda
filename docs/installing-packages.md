@@ -17,12 +17,12 @@ nav_order: 5
 
 ***Note***: It is worth noting here again that the packages that can be
 installed do not have to be `python` packages. `conda` is language-agnostic and
-will you can even create an environment without `python`. Nevertheless, `conda`
-is mostly used to manage `python` environments at this point.
+you can even create an environment without a `python` installation.
+Nevertheless, `conda` is mostly used to manage `python` environments.
 
 ## Installing packages
 
-The simplest way of install installing a package in the activate environment is
+The simplest way to install a package in the activated environment is
 simply
 ```bash
 conda install <PACKAGE>
@@ -56,7 +56,7 @@ conda create --name rapids-env --channel $CHNL cudf cuml
 ## Installing packages using Pip
 
 `conda` will also track installations performed through `pip`. I.e. if you, for 
-example installed `scipy` using `pip`
+example, installed `scipy` using `pip`
 ```bash
 pip install scipy
 ```

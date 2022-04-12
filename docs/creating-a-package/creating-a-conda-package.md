@@ -42,11 +42,12 @@ The full documentation for the `meta.yml` is found
 [here](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#run).
 A small breakdown is listed below.
 
-The `meta.yml` contains all the small things needed to updaload a `conda`
-package:
+The `meta.yml` contains all the small things needed to build and updload a
+`conda` package:
 * name
 * version number
 * software requirements on the machine running the builder and the future host
+* build script
 * test scripts and paths
 
 The most important parts of the `meta.yml` are:
@@ -85,7 +86,7 @@ also be a `git_url` or a `url` that grabs a `tar` ball. `build/script` does not
 have to be a one-liner, but could also be a path to an actual build script
 relative to the location of the `meta.yml` file. `requirements` asks for the
 necessary software needed to run the build process and the necessary software
-for potential hosts, e.g. `osx-64`. The software can be compilers that are
+for potential hosts, e.g. `osx-64`. The software can also be compilers that are
 called with a specified `build.sh` (`macos`, `Linux`) or `bld.bat` (`windows`).
 Finally, `test` could be specified as a script/command or in form of `python`
 module names under `imports`.
@@ -98,12 +99,14 @@ process and output the packages locally please run:
 ```bash 
 conda build intro2conda --croot pkgs
 ```
-where the `--croot` option and its argument define the package output path.
+where the `--croot` option and its argument define the package output path. 
+Particularly important to set should you be running on a remote machine with 
+anaconda loaded as a module.
 
 ### Indexing
 
-If everything goes smoothly, we can index the packaged directory, so that conda
-knows we have a package here. 
+If everything goes smoothly, we can index the packaged directory, so that
+`conda` knows we have a package here. 
 ```bash
 conda index pkgs
 ```
@@ -111,7 +114,7 @@ Should only take a fraction of a second
 
 ### Installing the local package
 
-Finally we can install the local package using
+Finally, we can install the local package using
 ```bash
 conda install --use-local -c ./pkgs intro2conda
 ```

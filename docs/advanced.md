@@ -46,9 +46,8 @@ or
 conda env config vars list
 ```
 
-Then, for example, in `python` we can print depending on the environment
+Then, for example, in `python`, we can print depending on the environment
 variable set in the `environment.yml`.
-
 
 ```python
 from intro2conda.print import customprint

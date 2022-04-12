@@ -7,8 +7,8 @@ nav_order: 1
 
 # Creating a Python Package Pypi-style
 
-As a part of the workshop we will learn how to create an anaconda package. For that, 
-we need to understand the parebone needs for a pyhton package.
+As a part of the workshop we will learn how to create an `anaconda` package. For
+that, we need to understand the structure needed to build a `python` package.
 
 <details open markdown="block">
   <summary>
@@ -52,8 +52,7 @@ Change the directory to
 ```bash
 cd intro2conda
 # or
-cd /path/to/introduction-to-conda/python-package
-```
+cd /path/to/introduction-to-conda/intro2conda
 and either 
 ```bash
 python setup.py install [--editable]
