@@ -1,0 +1,37 @@
+{% set name = "intro2conda" %}
+{% set version = "1.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: intro2conda
+  sha256: db8ceab15f4734bf51662c66482f6fe73aa4ea2d2bd6aa9a80a0e8db4bbc6c53
+  folder: conda/build
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - intro2conda
+    - intro2conda.print
+
+about:
+  home: https://lsawade.github.io/introduction-to-conda/
+  license: GPL-3.0+
+  license_family: GPL
+  license_file: LICENSE 
+  summary: Introduction to conda
+
+extra:
+  recipe-maintainers:
+    - lsawade
