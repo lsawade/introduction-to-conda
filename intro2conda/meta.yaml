@@ -6,11 +6,11 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://github.com/lsawade/introduction-to-conda/tree/main/python-package
+  url: https://github.com/lsawade/introduction-to-conda
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --ignore-installed -vv "
+  script: "cd intro2conda {{ PYTHON }} -m pip install . --ignore-installed -vv "
 
 requirements:
   host:
