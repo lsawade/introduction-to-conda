@@ -35,12 +35,13 @@ Not all packages were developed to work on all machines or all version of other
 software. A good example are syntax changes in `python`. With new python
 versions (not only `2->3`). Going from `3.9->3.10` there have been changes on
 the `typing` syntax. If you update your code to the new way of defining input
-types. Older versions of `python` will not be able to run your code anymore. On
-the other hand you maybe have a dependency that cannot be run on a newer
-`python` version. In such cases, it makes sense to find the versions of the
-codes that overlap and work with each other. A package manager such as `conda`
-will take care of that for you at installation time (sometimes this takes a
-ridiculous amount of time if you have a number of packages installed).
+types. Older versions of `python` will not be able to run your code anymore.
+Furthermore, you may have a dependency that cannot be run on a newer `python`
+version. In such cases, it makes sense to find the versions of the packages that
+overlap in their dependency structure and work with each other. A package
+manager such as `conda` will take care of that for you at installation time
+(sometimes this takes a ridiculous amount of time if you have a number of
+packages installed).
 
 ### Project specific dependencies 
 
@@ -59,11 +60,11 @@ way, nothing breaks and we can have both versions.
 <img src="figures/environments.png" width="75%" class="center"/>
 </p>
 
-_Figure showing the inter project dependencies on the left side we have a single
-umbrella environment that contains all package dependencies, on the right hand
-side, using an environment manager (e.g. conda) we divide the projects into 2
-different environments. Now, the package `B` does suffer from a version conflict
-anymore_
+_Figure showing the interproject dependencies and how `conda` takes care of it.
+On the left-hand side we have a single umbrella environment that contains all
+package dependencies. On the right-hand side, using an environment manager (e.g.
+conda), we divide the projects into two different environments. Now, the package
+`B` does suffer from a version conflict anymore_
 
 ### Reproducible research
 
