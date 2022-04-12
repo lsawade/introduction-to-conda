@@ -25,6 +25,8 @@ url-pretty: "lsawade.github.io"
 
 heading_anchors: true
 
+render_with_liquid: false
+
 # Supports true (default) or false
 search_enabled: true
 search:
