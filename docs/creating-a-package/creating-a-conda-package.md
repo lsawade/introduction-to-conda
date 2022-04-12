@@ -31,7 +31,7 @@ conda update conda-build
 ## Requirements
 
 The requirement to build a `conda` package is a working `meta.yml` that contains
-a build recipe. After successfule building you will need an `anaconda.org` 
+a build recipe. After successful building you will need an `anaconda.org` 
 account to upload and distribute the package.
 
 Let's start with the `meta.yml`
@@ -53,8 +53,8 @@ The most important parts of the `meta.yml` are:
 ```yaml
 ...
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: "{{{{ name|lower }}}}"
+  version: "{{{{ version }}}}"
 
 source:
   path: ./

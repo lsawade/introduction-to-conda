@@ -83,6 +83,15 @@ Now you are ready to activate/enter the environment using:
 conda activate test-env
 ```
 
+To check whether the activation was successful, see whether the python version
+you have in the environment is actually installed in your environment:
+```bash
+which python
+```
+If it does not return something like:
+`path/to/anaconda/envs/test-env/bin/python`, then you are in trouble.
+
+
 ## Remove an environment
 
 If your environment contains unreconcilable version conflicts, or you are simply
@@ -107,11 +116,11 @@ conda list --explicit
 We can even export the output to a file and recreate the environment using the
 source URLs only
 ```bash
-conda list --explicit > test-env.yml
+conda list --explicit > test-env-explicit.yml
 ```
 and 
 ```bash
-conda create --name test-env-2 --file test-env.yml
+conda create --name test-env-2 --file test-env-explicit.yml
 ```
 ***Note***: This only works if you are on (at least) the same platform. Most of
 the associated links in `test-env.yml` will point to platform specific
@@ -143,7 +152,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python[version='>=3.9']
+  - python>=3.9
   - matplotlib
   - numpy
 ```
@@ -160,7 +169,7 @@ how to define version numbers is given at the end of the
 
 Let's use this file to create the enviroment
 ```bash
-conda create env -f test-env.yml
+conda env create -f test-env.yml
 ```
 If the enviroment still exists remove it or give it a different name by using
 the `--name <env-name>` option. Since we are using a file we will not be

@@ -19,10 +19,10 @@ we need to understand the parebone needs for a pyhton package.
 {:toc}
 </details>
 
-## Structure of a very barebon Python package
+## Structure of a mini Python package
 
 ```
-1    python-package
+1    intro2conda
 2    |____environment.yml
 3    |____README.md
 4    |____setup.py
@@ -50,7 +50,7 @@ we need to understand the parebone needs for a pyhton package.
 
 Change the directory to 
 ```bash
-cd python-package
+cd intro2conda
 # or
 cd /path/to/introduction-to-conda/python-package
 ```

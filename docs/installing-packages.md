@@ -44,7 +44,7 @@ Channels can be specified using the `-c` option.
 
 ***PyTorch***:
 ```bash
-conda install -c pytroch pytorch
+conda install -c pytorch pytorch
 ```
 
 ***NVIDIA Rapids for Power9 Architecture (Traverse)***
