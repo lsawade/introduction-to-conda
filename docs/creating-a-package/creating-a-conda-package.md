@@ -130,3 +130,6 @@ conda install -c <username> intro2conda
 
 ***NOTE***: You can delete the `intro2conda` from your channel after uploading
 on [anaconda.org](https://anaconda.org/)
+
+
+## Next: [What's `mamba` now?](../mamba.md)

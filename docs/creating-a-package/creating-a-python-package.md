@@ -74,3 +74,7 @@ with the
 at the start of an `ipython` command line or jupyter noteboook session makes
 debugging and developing a breeze. Whenever the code is edited `ipython` will
 now re-import the function or module that as been editing to update the changes.
+
+
+
+## Next: [Creating a `conda` package](creating-a-conda-package.md)

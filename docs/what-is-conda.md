@@ -70,14 +70,17 @@ conda), we divide the projects into two different environments. Now, the package
 
 ### Reproducible research
 
-The third motivation here is creating environments, such that your research can
-be reproduced in the future. `conda` keeps track of the versions of the programs
-that you are installing. This information can be extracted and exported to a
-file. We can recreate the environment that your research was computed in using
-the exported file, which often named `environment.yml` or `env.yml`. This
-protects you against possible changes in future versions of, e.g. `numpy` or
-`scipy`. For example, at some point `numpy` updated how you access the `fft`
-modules, breaking many signal processing applications. With an version tracked
-`environment.yml` this would not happen.
+The third motivation here is that creating environments makes your research
+reproducible. `conda` keeps track of the versions of the programs that you are
+installing. This information can be extracted and exported to a file. We can
+recreate the environment that your research was computed in using the exported
+file, which often named `environment.yml` or `env.yml`. This protects you
+against possible changes in future versions of, e.g. `numpy` or `scipy`. For
+example, at some point `numpy` updated how you access the `fft` modules,
+breaking many signal processing applications. With a version-tracked
+environment this would not happen.
+
+
+## Next: [Environments](environments.md)
 
 

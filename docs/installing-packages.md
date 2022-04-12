@@ -86,3 +86,5 @@ The table below shows an overview on how to apply the version constraints
 ***NOTE***: You have to use quotation marks if you are using any of [`> < | *`]
 in the specification or if the specification contains a space.
 
+
+## Next: [Creating a package](creating-a-package/index.md)

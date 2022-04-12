@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mamba
-nav_order: 8
+nav_order: 7
 ---
 # `mamba`?
 
@@ -27,3 +27,7 @@ Faster
 ## Why not `mambda`?
 
 Still has some kinks 
+
+
+## Next: [Advanced Examples](advanced.md)
+
