@@ -6,8 +6,8 @@ nav_order: 1
 
 # Introduction to `conda`
 
-This is the repository associated to the PICScIE Spring Workshop 2022
-'Introduction to Conda'.
+This is the documentation associated with the PICScIE Workshop 
+'Introduction to Conda' (Spring 2022).
 
 <details open markdown="block">
   <summary>
@@ -52,6 +52,8 @@ some knowledge to you on how to publish your software using conda
 The main requirement for this course is that you have some notion of how to work
 with the (Linux) command line, and have a working Anaconda installation.
 
+---
+
 ## Useful links
 
 ***Command line***:
@@ -64,7 +66,10 @@ or less storage
 * Install miniconda: [Link](https://docs.conda.io/en/latest/miniconda.html)
 
 ***Documentation for `conda-build` and creating `conda` packages***:
-* https://docs.conda.io/projects/conda-build/en/latest/index.html
+* [Link](https://docs.conda.io/projects/conda-build/en/latest/index.html)
+
+***YAML Documentation***
+* [Link](https://yaml.org)
 
 ***Cheatsheet for `conda`***
 * [Link](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
