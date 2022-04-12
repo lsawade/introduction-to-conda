@@ -28,9 +28,9 @@ we need to understand the parebone needs for a pyhton package.
 4    |____setup.py
 5    |____setup.cfg
 6    |____src
-7    |    |____intro2conda
-8    |    |    |______init__.py
-9    |    |    |____print.py
+7         |____intro2conda
+8              |______init__.py
+9              |____print.py
 ```
 
 ***Line-by-line***:
@@ -48,23 +48,29 @@ we need to understand the parebone needs for a pyhton package.
 
 ## Installation
 
-Either 
-
+Change the directory to 
+```bash
+cd python-package
+# or
+cd /path/to/introduction-to-conda/python-package
+```
+and either 
 ```bash
 python setup.py install [--editable]
 ```
-
 or 
-
 ```bash
 pip install [-e] .
 ```
 
-`--editable` or `-e` allows us to edit the software after installation. Combined with the 
+### EDITABLE MODE!
 
+`--editable` or `-e` allows us to edit the software after installation. Combined
+with the 
 ```python
 %load_ext autoreload
 %autoreload 2
 ```
-
-at the beginning of an `ipython` command line or jupyter noteboook makes debugging and developing a breeze. Whenever the code is edited `ipython` will now re-import the function or module that as been editing to update the changes.
+at the start of an `ipython` command line or jupyter noteboook session makes
+debugging and developing a breeze. Whenever the code is edited `ipython` will
+now re-import the function or module that as been editing to update the changes.
