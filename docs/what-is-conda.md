@@ -52,13 +52,15 @@ dependencies of the same software. Say, we are working on `Project 1` and
 on a specific version of `Software B` but `Software C` depends on a different
 version of `Software B`. That's not exactly ideal. Installing either version of
 `Software B` will break the other `Project`. `conda` lets us easily create and
-manage separate environments to avoid such version conflicts, and automatically
-checks the installed version against when we try to install something new. That
-way, nothing breaks and we can have both versions.
+manage separate environments to avoid such version conflicts (see Figure below).
+Additionally, `conda` automatically checks the package that we are trying to
+install against all installed packages and their versions. That way, nothing
+breaks and we can have both versions. 
 
-<p align="center">
-<img src="figures/environments.png" width="75%" class="center"/>
-</p>
+***DISCLAIMER*** when your environments
+become large and complicated this process becomes very long...
+
+![](figures/environments.png)
 
 _Figure showing the interproject dependencies and how `conda` takes care of it.
 On the left-hand side we have a single umbrella environment that contains all
