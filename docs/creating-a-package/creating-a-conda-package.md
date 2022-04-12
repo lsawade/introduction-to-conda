@@ -52,6 +52,7 @@ The `meta.yml` contains all the small things needed to build and updload a
 
 The most important parts of the `meta.yml` are:
 
+{% raw %}
 ```yaml
 ...
 package:
@@ -79,6 +80,7 @@ test:
     - intro2conda.print
 ...
 ```
+{% endraw %}
 
 The `package` description defines name and version number. `source` defines
 where to get the package from relative to the path of the `meta.yml`. This could

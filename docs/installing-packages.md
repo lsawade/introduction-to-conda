@@ -65,7 +65,7 @@ include the pip dependencies:
 ```bash
 conda env export
 ```
-***DISCLAIMER***: `conda env export --from history` does not include the `pip`
+***DISCLAIMER***: `conda env export --from-history` does not include the `pip`
 dependencies. There is an open issue for `conda` on GitHub to include this in 
 future releases ([Github Issue](https://github.com/conda/conda/issues/9628)).
 
