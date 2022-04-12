@@ -55,6 +55,16 @@ manage separate environments to avoid such version conflicts, and automatically
 checks the installed version against when we try to install something new. That
 way, nothing breaks and we can have both versions.
 
+<p align="center">
+<img src="figures/environments.png" width="75%" class="center"/>
+</p>
+
+_Figure showing the inter project dependencies on the left side we have a single
+umbrella environment that contains all package dependencies, on the right hand
+side, using an environment manager (e.g. conda) we divide the projects into 2
+different environments. Now, the package `B` does suffer from a version conflict
+anymore_
+
 ### Reproducible research
 
 The third motivation here is creating environments, such that your research can
