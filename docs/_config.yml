@@ -52,7 +52,8 @@ search:
   button: false
 
 include:
-  figures/environments.png
+  - figures
+  - figures/environments.png
 
 # readme_index:
 #   enabled:          true
