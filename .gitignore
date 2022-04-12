@@ -2,3 +2,6 @@
 build
 dist
 __pycache__
+pkgs
+*.tar.gz
+

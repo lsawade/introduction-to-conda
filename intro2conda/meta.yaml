@@ -1,23 +1,24 @@
 {% set name = "intro2conda" %}
-{% set version = "1.0" %}
+{% set data = load_setup_py_data() %}
+{% set version = data.get('version')  %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://github.com/lsawade/introduction-to-conda
-
+  path: ./
 build:
+  skip: true # [win]
   number: 0
-  script: "cd intro2conda {{ PYTHON }} -m pip install . --ignore-installed -vv "
+  script: "{{ PYTHON }} -m pip install . --ignore-installed -vv "
 
 requirements:
   host:
+    - python >=3.8
     - pip
-    - python
   run:
-    - python
+    - python >=3.8
 
 test:
   imports:
@@ -25,7 +26,7 @@ test:
     - intro2conda.print
 
 about:
-  home: https://lsawade.github.io/introduction-to-conda/
+  home: https://lsawade.github.io/introduction-to-conda
   license: GPL-3.0+
   license_family: GPL
   license_file: LICENSE 

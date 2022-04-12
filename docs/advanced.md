@@ -19,6 +19,8 @@ file that is more easily written and changed that is read as a config file upon
 running the software is probably a better choice (eg.
 [TOML](https://toml.io/en/), or [YAML](https://yaml.org)).
 
+### Set environment variables in the `environment.yml`
+
 ***An example for setting a configuration parameter***:
 
 If we used an `environment.yml` with the following content:
@@ -60,7 +62,7 @@ customprint(pdict)
 Exit python, update `PSTYLE` to a different value than `PRETTY`,
 and run again to see the change.
 
-## Setting enviroment variables after creating the environment
+### Setting enviroment variables after creating the environment
 
 We can set environment specific variables after we already created the
 environment using the following syntax
@@ -75,10 +77,7 @@ It will also be included now, when exporting the environment:
 conda env export --from-history 
 ```
 
-
-
-
-## Why can't/shouldn't we use this with paths?
+### Why can't/shouldn't we use this with paths?
 
 The `environment.yml` is not very dynamic in the sense that it is not aware
 of/cannot parse standard path descriptions such as `$HOME`, `$USER` etc. So, if
@@ -88,4 +87,13 @@ single machine in a single location. Then, setting the as an environment
 variable may be ok!
 
 
+## Github workflows
+
+A lot of things can be automated using github workflows. Github workflows are
+`.yml` files that are in the `.github/` directory in your repository. In only a
+few step you can, e.g., set up unit testing, so that your package is tested with
+every `push`, or `pull request`. The files are rather lengthy and beyond the 
+scope of the workshop but I wanted to mention them here because Github workflows 
+can be used for building and uploading your conda package so that you do not 
+have to do that.
 

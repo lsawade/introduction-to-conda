@@ -18,7 +18,12 @@ nav_order: 8
 
 ## What is `mamba`?
 
+Drop in replacement for conda just written in C++ so faster
+
 ## Why `mamba`?
+
+Faster
 
 ## Why not `mambda`?
 
+Still has some kinks 
