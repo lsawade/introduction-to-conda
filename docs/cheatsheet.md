@@ -23,16 +23,17 @@ daily basis.
 
 ## Basics
 
-| Command                     | Description                                  |
-| --------------------------- | -------------------------------------------- |
-| `conda info`                | Verify `conda` is installed, and its version |
-| `conda update conda`        | Update `conda`                               |
-| `conda install PACKAGENAME` | Install package                              |
-| `conda update PACKAGENAME`  | Update specific package                      |
-| `COMMANDNAME --help`        | Command line help                            |
+| Command                     | Description                                           |
+| --------------------------- | ----------------------------------------------------- |
+| `conda info`                | Verify `conda` is installed, and its version          |
+| `conda update conda`        | Update `conda`                                        |
+| `conda install PACKAGENAME` | Install package                                       |
+| `conda update PACKAGENAME`  | Update specific package                               |
+| `COMMANDNAME --help`        | Command line help                                     |
+| `conda clean --all`         | Removes unused, cached packages that are ok to delete |
 
 
-## Environemts
+## Environments
 
 | Command                                                    | Description                                                               |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------- |
